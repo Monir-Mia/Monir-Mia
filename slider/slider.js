@@ -1,3 +1,4 @@
+
 <!-- Custom Script for Hover Slide Image with Duration -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
