@@ -1,4 +1,3 @@
-<style>
 .hover-slide-image {
   overflow: hidden;
   height: 350px;
@@ -59,4 +58,3 @@
 .hover-slide-image:hover .template-headline {
   bottom: 0;
 }
-</style>
