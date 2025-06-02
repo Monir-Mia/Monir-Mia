@@ -1,10 +1,9 @@
-
 <style>
 .hover-slide-image {
   overflow: hidden;
   height: 350px;
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -35,8 +34,29 @@
   z-index: 2;
 }
 
+/* Template Headline (Bottom Text Slide Up) */
+.template-headline {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.40);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 10px;
+  transition: bottom 0.4s ease;
+  z-index: 1;
+}
+
 /* Hover effect */
 .hover-slide-image:hover .hover-overlay {
   opacity: 1;
+}
+
+.hover-slide-image:hover .template-headline {
+  bottom: 0;
 }
 </style>
