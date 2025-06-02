@@ -1,0 +1,41 @@
+<style>
+.hover-slide-image {
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.hover-slide-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 3s ease;
+}
+
+/* Overlay Button */
+.hover-slide-image .hover-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Hover effect */
+.hover-slide-image:hover .hover-overlay {
+  opacity: 1;
+}
+</style>
